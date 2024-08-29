@@ -2,6 +2,20 @@ html,
 body {
   height: 100%;
 }
+/* Global cursor */
+* {
+  cursor: url("../cursors/cursor.cur"), auto;
+}
+
+/* Specific override for submit buttons */
+form input[type="submit"] {
+  cursor: url("../cursors/pointer.cur"), pointer !important;
+}
+
+/* Custom cursor class */
+.pointer-cursor {
+  cursor: url("../cursors/pointer.cur"), pointer;
+}
 
 body {
   display: flex;
